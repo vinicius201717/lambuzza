@@ -3,7 +3,7 @@ import { styled } from '@/styles'
 export const HeaderContainer = styled('header', {
   width: '100vw',
   height: '3.75rem',
-  boxShadow: '0px 3px 11px 0px rgba(0,0,0,0.75)',
+  boxShadow: '0px 3px 11px 0px rgba(0,0,0,0.25)',
   overflow: 'hidden',
   display: 'flex',
   alignItems: 'center',
@@ -12,4 +12,41 @@ export const HeaderContainer = styled('header', {
   padding: '2rem',
 
   img: { marginTop: '0.5rem' },
+
+  '@media(max-width: 600px)': {
+    padding: '1rem',
+    img: {
+      width: '5rem',
+    },
+  },
+})
+
+export const SubMenu = styled('div', {
+  gap: '2rem',
+  height: '100%',
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'center',
+
+  img: { marginTop: '0' },
+
+  input: {
+    width: '300px',
+    padding: '0.5rem',
+    borderRadius: '4px',
+    border: 'none',
+    backgroundColor: '#2e2e2e',
+    fontSize: '1rem',
+    color: '#d1d1d1',
+  },
+
+  '@media(max-width: 600px)': {
+    padding: '1rem',
+    input: {
+      width: '10rem',
+    },
+    img: {
+      width: '2.5rem',
+    },
+  },
 })
