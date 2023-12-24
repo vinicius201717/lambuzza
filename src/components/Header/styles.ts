@@ -3,7 +3,7 @@ import { styled } from '@/styles'
 export const HeaderContainer = styled('header', {
   width: '100vw',
   height: '3.75rem',
-  boxShadow: '0px 3px 11px 0px rgba(0,0,0,0.25)',
+  boxShadow: '0px 0px 4px 0px rgba(214,214,214,1)',
   overflow: 'hidden',
   display: 'flex',
   alignItems: 'center',
@@ -34,8 +34,7 @@ export const SubMenu = styled('div', {
     width: '300px',
     padding: '0.5rem',
     borderRadius: '4px',
-    border: 'none',
-    backgroundColor: '#2e2e2e',
+    border: '1px solid #d6d6d6',
     fontSize: '1rem',
     color: '#d1d1d1',
   },

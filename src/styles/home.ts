@@ -1,23 +1,19 @@
 import { styled } from '.'
 
 export const MainContainer = styled('main', {
-  width: '100vw',
   height: '100vh',
   display: 'flex',
   justifyContent: 'center',
-  alignItems: 'center',
-  overflowX: 'hidden',
-})
-
-export const Title = styled('h1', {
-  textAlign: 'center',
+  overflow: 'hidden',
 })
 
 export const ProductsContainer = styled('section', {
+  width: '1090px',
+  height: '100vh',
   display: 'flex',
+  flexDirection: 'column',
   margin: '10px auto',
   gap: '1rem',
-  flexWrap: 'wrap',
 
   '@media(max-width:  1169px)': {
     gridTemplateColumns: '1fr 1fr 1fr',
@@ -25,9 +21,11 @@ export const ProductsContainer = styled('section', {
 })
 
 export const ItemProduct = styled('div', {
-  width: '300px',
+  width: '100%',
   height: '500px',
-  borderRadius: '10px',
+  display: 'flex',
+  justifyContent: 'space-between',
+  alignItems: 'center',
   overflow: 'hidden',
 
   img: {
@@ -69,5 +67,14 @@ export const ActionItemProduct = styled('div', {
     '&:hover': {
       backgroundColor: '#525252',
     },
+  },
+})
+
+export const EmDesenvolvimento = styled('h1', {
+  position: 'absolute',
+  bottom: '50%',
+  textAlign: 'center',
+  span: {
+    color: '#4d4d4d',
   },
 })

@@ -1,28 +1,23 @@
 import Layout from '@/Layout'
 import {
-  ActionItemProduct,
+  EmDesenvolvimento,
   ItemProduct,
+  MainContainer,
   ProductsContainer,
-  Title,
 } from '@/styles/home'
-
-import paodequeijo from '../../public/paodequeijo.jpeg'
-import Image from 'next/image'
 
 export default function Home() {
   return (
     <Layout>
-      {/* <Title>Lanches</Title> */}
-      <ProductsContainer>
-        {/* <ItemProduct>
-          <Image src={paodequeijo} alt="" width={250} />
-          <ActionItemProduct>
-            <button>-</button>
-            <span>0</span>
-            <button>+</button>
-          </ActionItemProduct>
-        </ItemProduct> */}
-      </ProductsContainer>
+      <MainContainer>
+        <EmDesenvolvimento>
+          Em desenvolvimento <span>@gaindev</span>
+        </EmDesenvolvimento>
+        <ProductsContainer>
+          {/* <ItemProduct>
+          </ItemProduct> */}
+        </ProductsContainer>
+      </MainContainer>
     </Layout>
   )
 }
