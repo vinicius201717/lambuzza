@@ -7,25 +7,32 @@ export const SidebarContainer = styled('aside', {
   overflow: 'hidden',
   transition: 'width 1s ease',
 
-  '@media(max-width: 800px)': {
-    width: '0',
-    visibility: 'hidden',
-    opacity: 0,
-    margin: '1rem',
-    transition: 'width 0.3s ease, visibility 0s 1s, opacity 1s',
-  },
+  // '@media(max-width: 800px)': {
+  //   width: '0',
+  //   visibility: 'hidden',
+  //   opacity: 0,
+  //   margin: '1rem',
+  //   transition: 'width 0.3s ease, visibility 0s 1s, opacity 1s',
+  // },
 
   variants: {
     open: {
       true: {
-        visibility: 'visible',
-        opacity: 1,
-        width: '200px',
-        margin: '1rem',
+        '@media(max-width: 800px)': {
+          width: '200px',
+          opacity: 1,
+          margin: '1rem',
+          transition: 'width 0.3s ease, visibility 0s 0.3s, opacity 0.3s',
+        },
       },
       false: {
-        visibility: 'hidden',
-        opacity: 0,
+        '@media(max-width: 800px)': {
+          width: '200px',
+          visibility: 'hidden',
+          opacity: 0,
+          margin: '1rem',
+          transition: 'width 0.3s ease, visibility 0s 0.3s, opacity 0.3s',
+        },
       },
     },
   },
